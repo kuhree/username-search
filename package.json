@@ -1,12 +1,14 @@
 {
-  "name": "usernames",
-  "scripts": {
-    "dev": "bun run --hot src/index.ts"
-  },
-  "dependencies": {
-    "hono": "^4.7.1"
-  },
-  "devDependencies": {
-    "@types/bun": "latest"
-  }
+	"name": "username-search",
+	"scripts": {
+		"dev": "bun run --bun --hot app/server.tsx",
+		"serve": "bun --bun run app/server.tsx",
+		"test": "bun test"
+	},
+	"dependencies": {
+		"hono": "^4.7.1"
+	},
+	"devDependencies": {
+		"@types/bun": "latest"
+	}
 }
