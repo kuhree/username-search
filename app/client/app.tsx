@@ -130,14 +130,14 @@ export function App() {
 				/>
 
 				<div class="form-actions">
-					{isLoading === false && results.length > 0 && (
+					{/* isLoading === false && results.length > 0 && (
 						<button
 							type="button"
 							onClick={handleDownload}
 						>
 							[ Download Results ]
 						</button>
-					)}
+					)*/}
 
 					<button
 						type="submit"
