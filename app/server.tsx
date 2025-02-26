@@ -155,7 +155,7 @@ app.get('/api/v1/usernames/:username', (c) => {
 
 app.get('/api/v1/usernames/:username/download', async (c) => {
 	const { username } = c.req.param()
-	const filePath = `public/sherlock/${username}/${username}.csv`
+	const filePath = `${process.cwd()}/public/sherlock/${username}/${username}.csv`
 
 	try {
 		const file = Bun.file(filePath)
